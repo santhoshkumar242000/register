@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out; /* Fade in effect for the page */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    animation: slideIn 0.6s ease-in-out; /* Slide in animation for the form */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    margin-bottom: 15px;
+    animation: inputFadeIn 1s ease-in-out; /* Fade in effect for input fields */
+}
+
+@keyframes inputFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.input-field label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-field input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s ease; /* Smooth transitions for input fields */
+}
+
+.input-field input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3); /* Glow effect when focusing */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Scaling and background transition */
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    animation: textFadeIn 1.2s ease-in-out; /* Fade in effect for the text */
+}
+
+@keyframes textFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition for links */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Change color on hover */
+}
